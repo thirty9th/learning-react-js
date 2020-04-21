@@ -12,9 +12,9 @@ class Cell extends Component<CellProps> {
     render() {
         const cellId = "cell-" + this.props.cellId;
         return <div id={cellId}
-                    className={"cell"}
+                    className={"cell col text-center"}
                     onClick={() => this.props.onClick()}>
-            {this.props.cellValue}
+            <p>{this.props.cellValue}</p>
         </div>;
     }
 

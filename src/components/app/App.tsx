@@ -7,7 +7,14 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Board id={"1"} />
+                <div className="jumbotron text-center">
+                    <h1>Tic Tac Toe</h1>
+                    <p>A simple game.</p>
+                </div>
+
+                <div className="container-fluid">
+                    <Board id={"1"}/>
+                </div>
             </div>
         );
     }

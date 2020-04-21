@@ -39,16 +39,22 @@ class Board extends Component<BoardProps, State> {
 
     render() {
         const boardId = "board-" + this.props.id;
-        return <div id={boardId} className={"board"}>
-            {this.createCell(0)}
-            {this.createCell(1)}
-            {this.createCell(2)}
-            {this.createCell(3)}
-            {this.createCell(4)}
-            {this.createCell(5)}
-            {this.createCell(6)}
-            {this.createCell(7)}
-            {this.createCell(8)}
+        return <div id={boardId} className={"board container-fluid"}>
+            <div className="row">
+                {this.createCell(0)}
+                {this.createCell(1)}
+                {this.createCell(2)}
+            </div>
+            <div className="row">
+                {this.createCell(3)}
+                {this.createCell(4)}
+                {this.createCell(5)}
+            </div>
+            <div className="row">
+                {this.createCell(6)}
+                {this.createCell(7)}
+                {this.createCell(8)}
+            </div>
         </div>;
     }
 
