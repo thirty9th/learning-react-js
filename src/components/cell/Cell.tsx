@@ -4,6 +4,8 @@ import "./Cell.css";
 export interface CellProps {
     cellId: string,
     cellValue: string,
+    xCoordinate: number,
+    yCoordinate: number,
     onClick: any
 }
 
